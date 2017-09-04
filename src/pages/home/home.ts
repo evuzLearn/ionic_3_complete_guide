@@ -9,5 +9,12 @@ import { UsersPage } from './../users/users';
 })
 export class HomePage {
 
-  usrPage = UsersPage;
+  constructor(public navCtrl: NavController) {
+
+  }
+
+  onGoToUsers() {
+    this.navCtrl.push(UsersPage)
+      .catch((err) => console.log('Access Denied' + err))
+  }
 }
