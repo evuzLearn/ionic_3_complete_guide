@@ -1,3 +1,4 @@
+import { TabsPage } from './../pages/tabs/tabs';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -20,7 +21,8 @@ import { FavoritesPage } from './../pages/favorites/favorites';
     LibraryPage,
     QuotePage,
     QuotesPage,
-    SettingsPage
+    SettingsPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { FavoritesPage } from './../pages/favorites/favorites';
     LibraryPage,
     QuotePage,
     QuotesPage,
-    SettingsPage
+    SettingsPage,
+    TabsPage
   ],
   providers: [
     StatusBar,
