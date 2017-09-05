@@ -14,8 +14,4 @@ export class HomePage {
   onClick() {
     console.log('Clicked!');
   }
-
-  onElementClicked() {
-    console.log('You have clicked an element');
-  }
 }
