@@ -7,6 +7,18 @@
 </ion-header>
 
 <ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-3>A column</ion-col>
+      <ion-col>A column</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col offset-5>A column</ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
   <button (click)="onClick()"
     color="secondary"
     ion-button>A normal button</button>
@@ -28,7 +40,7 @@
     full
     ion-button>Another button</button>
 
-  <ion-list reorder="true" >
+  <ion-list reorder="true">
     <ion-item>
       <ion-icon name="star"
         item-left></ion-icon>
