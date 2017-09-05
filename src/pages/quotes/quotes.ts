@@ -16,6 +16,9 @@ export class QuotesPage implements OnInit {
     this.quoteGroup = this.navParams.data;
   }
 
+  onAddToFavorite(quote: Quote) {
+    console.log(quote.text);
+  }
   // ionViewDidLoad() {
   //   this.quoteGroup = this.navParams.data;
   //   Add elvis operator(?) in template to use this approach
