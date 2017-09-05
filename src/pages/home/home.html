@@ -7,6 +7,15 @@
 </ion-header>
 
 <ion-content padding>
+  <div class="gestures"
+    (click)="onElementClicked()">
+    Click me!
+  </div>
+  <div class="gestures"
+    (press)="onElementClicked()"
+    (tap)="onClick()">
+    Long press me!
+  </div>
   <ion-grid>
     <ion-row>
       <ion-col col-3>A column</ion-col>
