@@ -12,7 +12,7 @@ import { SettingsPage } from './../pages/settings/settings';
 export class MyApp {
   @ViewChild('nav') nav: NavController;
   tabsPage = TabsPage;
-  settingPage = SettingsPage;
+  settingsPage = SettingsPage;
 
   constructor(
     private menuCtrl: MenuController,
