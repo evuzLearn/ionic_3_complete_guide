@@ -5,6 +5,7 @@ import { Quote } from './../../data/quote.interface';
 
 import { QuotePage } from './../quote/quote';
 import { QuotesService } from './../../services/quotes';
+import { SettingsService } from './../../services/settings';
 
 @Component({
   selector: 'page-favorites',
@@ -15,6 +16,7 @@ export class FavoritesPage {
 
   constructor(
     private quotesService: QuotesService,
+    private settingsService: SettingsService,
     private modalCtrl: ModalController
   ) { }
 
@@ -35,5 +37,15 @@ export class FavoritesPage {
   onRemoveFromFavorites(quote: Quote) {
     this.quotesService.removeQuoteFromFavorites(quote);
     this.quotes = this.quotesService.getFavoriteQuotes();
+  }
+
+  getBackgroundColor() {
+    return this.settingsService.isAltBackground() ?
+    'altQuoteBackground' :
+    'quoteBackground';
+  }
+
+  isAltBackground() {
+    return this.settingsService.isAltBackground();
   }
 }
